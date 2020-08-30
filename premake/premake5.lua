@@ -1,10 +1,11 @@
-workspace "cod zombies"
+workspace "test project"
 	configurations {"Debug", "Release"}
 	location "../"
+	startproject "test project"
 
 include "../vendor/Glad"
 
-project "cod zombies"
+project "test project"
 	kind "ConsoleApp"
 	language "C++"
 	cppdialect "C++17"
