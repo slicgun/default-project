@@ -4,7 +4,7 @@ project "Glad"
     staticruntime "on"
     
 	targetdir "../../bin/%{cfg.buildcfg}"
-	objdir "../../bin-int/%{cfg.buildcfg}"
+	objdir "../../bin-int"
 
     files
     {

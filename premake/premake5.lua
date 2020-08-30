@@ -9,7 +9,7 @@ project "cod zombies"
 	language "C++"
 	cppdialect "C++17"
 	targetdir "../bin/%{cfg.buildcfg}"
-	objdir "../bin-int/%{cfg.buildcfg}"
+	objdir "../bin-int"
 
 	files 
 	{
