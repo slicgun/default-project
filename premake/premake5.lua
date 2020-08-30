@@ -2,12 +2,14 @@ workspace "cod zombies"
 	configurations {"Debug", "Release"}
 	location "../"
 
+include "../vendor/Glad"
+
 project "cod zombies"
 	kind "ConsoleApp"
 	language "C++"
 	cppdialect "C++17"
-	targetdir "bin/%{cfg.buildcfg}"
-	objdir "bin-int/%{cfg.buildcfg}"
+	targetdir "../bin/%{cfg.buildcfg}"
+	objdir "../bin-int/%{cfg.buildcfg}"
 
 	files 
 	{
@@ -18,7 +20,8 @@ project "cod zombies"
 	includedirs
 	{
 		"../vendor/glm",
-		"../vendor/SFML/include"
+		"../vendor/SFML/include",
+		"../vendor/Glad/include"
 	}
 
 	libdirs
@@ -28,6 +31,7 @@ project "cod zombies"
 
 	links
 	{
+		"Glad",
 		"opengl32.lib"
 	}
 

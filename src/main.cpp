@@ -1,16 +1,25 @@
 #include<iostream>
 #include<glm/glm.hpp>
 
+#include<glad/glad.h>
+
 #include<SFML/Graphics.hpp>
 
 int main()
 {
-	glm::vec2 v1 = {1, 2};
-	std::cout << "hello\n";
+    sf::ContextSettings settings;
+    settings.depthBits = 24;
+    settings.stencilBits = 8;
+    settings.antialiasingLevel = 4;
+    settings.majorVersion = 4;
+    settings.minorVersion = 6;
 
-    sf::RenderWindow window(sf::VideoMode(200, 200), "SFML works!");
-    sf::CircleShape shape(100.f);
-    shape.setFillColor(sf::Color::Green);
+    sf::RenderWindow window(sf::VideoMode(1280, 720), "SFML works!", sf::Style::Default, settings);
+
+    if(!gladLoadGL())
+    {
+        std::cout << "opengl did not load correctly\n";
+    }
 
     while(window.isOpen())
     {
@@ -21,8 +30,9 @@ int main()
                 window.close();
         }
 
-        window.clear();
-        window.draw(shape);
+        glClearColor(0, 0, 0, 1);
+        glClear(GL_COLOR_BUFFER_BIT);
+
         window.display();
     }
 
