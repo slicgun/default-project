@@ -5,14 +5,14 @@ This is a repo which contains the files necessary to create and build a visual s
   - glm
   - spdlog
   
-#Instructions
+# Instructions
   - open cmd and type cd <file-path>
   - paste: git clone --recurse-submodules https://github.com/slicgun/default-project <folder-name> and let git clone all the files/submodules
   - go into <folder-name> and go to the premake folder
   - run generate script.py and type the name you want your visual studio solution and project to have
   - run generate project.bat
   
- #Notes
+ # Notes
   - this is windows only
   - this requires git to be installed
   - <file-path> refers to the file path you want your project folder to be in (e.g. C:/projects)
