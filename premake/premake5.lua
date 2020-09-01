@@ -22,7 +22,8 @@ project "default_project"
 	{
 		"../vendor/glm",
 		"../vendor/SFML/include",
-		"../vendor/Glad/include"
+		"../vendor/Glad/include",
+		"../vendor/spdlog/include"
 	}
 
 	libdirs
