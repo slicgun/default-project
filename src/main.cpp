@@ -5,6 +5,8 @@
 
 #include<SFML/Graphics.hpp>
 
+#include"Log.h"
+
 float vertices[] = {
      0.5f,  0.5f, 0.0f,
      0.5f, -0.5f, 0.0f,
@@ -33,6 +35,14 @@ const char* fragmentShaderSource = "#version 330 core\n"
 
 int main()
 {
+    Log::get();
+
+    Log::trace("{}", 5);
+    Log::info("{}", 4);
+    Log::warn("aaaaaa");
+    Log::error("error");
+    Log::critical("bad");
+
     sf::ContextSettings settings;
     settings.depthBits = 24;
     settings.stencilBits = 8;
