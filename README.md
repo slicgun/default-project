@@ -7,7 +7,7 @@ This is a repo which contains the files necessary to create and build a visual s
   
 ## Instructions
   - open cmd and type cd "file-path"
-  - paste: git clone --recurse-submodules https://github.com/slicgun/default-project "folder-name"
+  - paste: `git clone --recurse-submodules https://github.com/slicgun/default-project "folder-name"`
   - go into "folder-name" and go to the premake folder
   - run generate script.py and type the name you want your visual studio solution and project to have
   - run generate project.bat
@@ -20,4 +20,4 @@ This is a repo which contains the files necessary to create and build a visual s
   - using the examples from before your project/solution would be in C:/projects/new game/
   
   ## TODO
-   - add spdlog
+  - Remove the need for the sfml .dll files to be in the main folder.
