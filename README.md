@@ -11,6 +11,7 @@ This is a repo which contains the files necessary to create and build a visual s
   - go into "folder-name" and go to the premake folder
   - run generate script.py and type the name you want your visual studio solution and project to have
   - run generate project.bat
+  - in git type git remote set-url origin "new_url"
   
  ## Notes
   - this is windows only
