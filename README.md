@@ -20,6 +20,7 @@ This is a repo which contains the files necessary to create and build a visual s
   - "folder-name" refers to the folder you want your project to be in (e.g. "new game")
   - using the examples from before your project/solution would be in C:/projects/new game/
   - you may need to press "Show All Files" on visual studio when starting the solution for the first time
+  - the "new_url" is the url to your github repo which needs to be completely empty 
   
   ## TODO
   - Remove the need for the sfml .dll files to be in the main folder.
